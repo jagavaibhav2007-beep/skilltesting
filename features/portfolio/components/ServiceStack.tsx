@@ -1,5 +1,5 @@
 import { SERVICES, TYPOGRAPHY, STYLES, SIZES } from '@config/constants';
-import { Layers, Database, Cloud } from 'lucide-react';
+import { Layers, Database, Cloud, Sparkles } from 'lucide-react';
 
 const ICON_MAP = {
   Layers,
@@ -9,30 +9,47 @@ const ICON_MAP = {
 
 interface ServiceCardProps {
   id: string;
-  title: string;
+  title: { first: string; second: string };
   description: string;
-  icon: keyof typeof ICON_MAP;
-  image: string;
+  tags: string[];
   bgColor: string;
+  textColor: string;
   top: string;
 }
 
-const ServiceCard = ({ id, title, description, icon, image, bgColor, top }: ServiceCardProps) => {
-  const Icon = ICON_MAP[icon];
+const ServiceCard = ({ id, title, description, tags, bgColor, textColor, top }: ServiceCardProps) => {
   return (
-    <div className={`sticky ${top} h-screen flex flex-col`}>
-      <div className={`${bgColor} h-full w-full rounded-t-[48px] shadow-2xl px-8 md:px-24 py-20 flex flex-col justify-between border-t border-black/5`}>
-        <div className="flex flex-col md:flex-row justify-between items-start gap-12">
-          <div className="max-w-3xl">
-            <span className={STYLES.LABEL}>Service {id}</span>
-            <h2 className={`${TYPOGRAPHY.SERVICE_TITLE} text-primary mb-8`}>{title}</h2>
-            <p className={`${STYLES.SECONDARY_TEXT} max-w-xl ${TYPOGRAPHY.LEADING.BODY}`}>{description}</p>
+    <div className={`sticky ${top} h-[65vh] flex flex-col pt-4 pb-4`}>
+      <div className={`${bgColor} ${textColor} h-full w-full rounded-[40px] shadow-xl px-12 py-12 flex flex-col justify-between border border-white/10 relative overflow-hidden`}>
+        
+        {/* Header Block */}
+        <div>
+          <div className="flex justify-between items-center mb-6">
+            <span className="text-[10px] uppercase tracking-[0.2em] opacity-40 font-bold font-mono">Archive No. 0{id}</span>
           </div>
-          <Icon size={SIZES.ICON_LARGE} className="text-black/10" />
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tight leading-[0.95]">
+            <span className="block mb-1">{title.first}</span>
+            <span className="text-zinc-500">{title.second}</span>
+          </h2>
         </div>
-        <div className="flex justify-between items-end">
-          <div className="text-sm uppercase tracking-tighter border-b-2 border-primary pb-2 font-bold cursor-pointer hover:opacity-70">Explore Architecture</div>
-          <img src={image} alt={title} className="w-32 h-32 object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-lg" />
+
+        {/* Categories Block */}
+        <div className="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <span 
+              key={tag} 
+              className="px-4 py-1 bg-white/5 border border-white/5 rounded-md text-[10px] uppercase tracking-wider font-bold"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        {/* Footer/Description Block */}
+        <div className="max-w-xl">
+          <p className="text-lg md:text-xl font-medium leading-normal text-zinc-400">
+            {description}
+          </p>
         </div>
       </div>
     </div>
@@ -40,5 +57,17 @@ const ServiceCard = ({ id, title, description, icon, image, bgColor, top }: Serv
 };
 
 export const ServiceStack = () => {
-  return <section className="mt-32">{SERVICES.map(s => <ServiceCard key={s.id} {...s} />)}</section>;
+  return (
+    <section className="mt-32 pb-[30vh] px-4 md:px-12 lg:px-24">
+      <div className="max-w-6xl mx-auto space-y-12">
+        {SERVICES.map(s => (
+          <ServiceCard 
+            key={s.id} 
+            {...s}
+            tags={s.tags as unknown as string[]}
+          />
+        ))}
+      </div>
+    </section>
+  );
 }

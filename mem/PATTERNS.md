@@ -6,3 +6,4 @@
 - **Data**: All copy and magic values in `config/constants.ts`.
 - **Exports**: Named only. No feature defaults.
 - **Layout**: Individual Navbar/Footer components in `components/layout/`.
+- **Depth**: Color stacking (Dark Zinc -> Light Zinc -> White) for layered sticky sections.

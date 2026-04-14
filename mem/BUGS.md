@@ -20,3 +20,13 @@ Fix: Excluded `temp_backup`.
 Bug: Guessed `ArrowDownward` instead of `ArrowDown`.
 Fix: Fixed component name.
 ⛔ NEVER: Guess Lucide export names.
+
+**2026-04-14 — React Child Object Error**
+Bug: Attempted to render `{ first, second }` title object directly as a React child.
+Fix: Explicitly destructured and rendered `title.first` and `title.second` in `ServiceCard`.
+⛔ NEVER: Pass complex objects to JSX nodes that expect strings/elements.
+
+**2026-04-14 — Structural Overlap & Imbalance**
+Bug: Large `h-[85vh]` cards with high padding caused text to overlap on scroll.
+Fix: Simplified to `h-[65vh]` with `flex justify-between` and increased vertical container spacing.
+⛔ NEVER: Use overly large sticky heights without considering content collision.

@@ -9,6 +9,6 @@
 
 ## Constraints
 - **Animation**: Native CSS/Tailwind only. No Framer Motion.
-- **Data**: Centralized in `config/constants.ts`. No hardcoded JSX strings.
+- **Data**: Centralized in `config/constants.ts`. High-end typography uses object-based titles `{first, second}` to support dual-tone rendering.
 - **Legacy**: `temp_backup/` excluded from build.
-- **Layout**: No monolithic `Layout.tsx` proxy. Use direct modular imports.
+- **Layout**: Sticky stacking pattern for Services (`ServiceStack`). Uses `65vh` cards with `flex-justify-between` for optimal balance.

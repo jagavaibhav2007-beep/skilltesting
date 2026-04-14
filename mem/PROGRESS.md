@@ -4,9 +4,14 @@
 ## Status
 ✅ Architecture: Next.js + Tailwind v4 + Feature Folders
 ✅ Layout: Modular Navbar/Footer
-✅ Data: Decoupled Copy in constants.ts
-🚧 Content: Portfolio Projects
+✅ Decoupled Data Layer (Central Copy in Constants)
+✅ Color Stacking Pattern (Black -> Grey -> White)
+✅ High-End Sohub Card Design (Symmetrical Header/Body)
+✅ Minimalist UI Stabilization (Resolved Layout Overlaps)
+🚧 Content Population (Adding real details to Services/Work)
 ❌ View: Dark Mode
 
 ## Resume
 `features/portfolio/components/ProjectGrid.tsx` — Implement modular project grid.
+- Integrate the refined `ServiceCard` aesthetic into the project grid.
+- Ensure consistent spacing and hover state logic.

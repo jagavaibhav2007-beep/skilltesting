@@ -46,9 +46,39 @@ export const SERVICE_STACK_OFFSETS = {
 };
 
 export const SERVICES = [
-  { id: "01", title: "Frontend Design", description: "Crafting immersive interfaces where every pixel serves a structural purpose. High-precision typography meets fluid motion.", icon: "Layers", image: IMAGES.FRONTEND, bgColor: "bg-white", top: SERVICE_STACK_OFFSETS.FRONTEND },
-  { id: "02", title: "Backend Logic", description: "The foundation of every digital monument. We architect scalable, resilient systems that handle complexity with grace.", icon: "Database", image: IMAGES.BACKEND, bgColor: "bg-zinc-100", top: SERVICE_STACK_OFFSETS.BACKEND },
-  { id: "03", title: "Cloud Systems", description: "Decentralized power at global scale. Automated deployment pipelines and immutable serverless environments.", icon: "Cloud", image: IMAGES.CLOUD, bgColor: "bg-white", top: SERVICE_STACK_OFFSETS.CLOUD },
+  { 
+    id: "01", 
+    title: { first: "Smart", second: "Development" }, 
+    description: "Our team will work closely with you, taking the time to understand your vision and feedback in order to bring your ideas to life.", 
+    tags: ["Web Development", "App Development", "Interactions"],
+    icon: "Layers", 
+    bgColor: "bg-[#1c1f24]", 
+    textColor: "text-white",
+    labelColor: "text-zinc-500",
+    top: SERVICE_STACK_OFFSETS.FRONTEND 
+  },
+  { 
+    id: "02", 
+    title: { first: "System", second: "Architecture" }, 
+    description: "We architect scalable, resilient systems that handle complexity with grace, ensuring the final product surpasses expectations.", 
+    tags: ["Backend Logic", "Cloud Infrastructure", "Security"],
+    icon: "Database", 
+    bgColor: "bg-[#17191d]", 
+    textColor: "text-white",
+    labelColor: "text-zinc-600",
+    top: SERVICE_STACK_OFFSETS.BACKEND 
+  },
+  { 
+    id: "03", 
+    title: { first: "Global", second: "Deployment" }, 
+    description: "Decentralized power at global scale. Automated deployment pipelines and immutable serverless environments.", 
+    tags: ["Kubernetes", "DevOps", "Scaling"],
+    icon: "Cloud", 
+    bgColor: "bg-[#121417]", 
+    textColor: "text-white",
+    labelColor: "text-zinc-700",
+    top: SERVICE_STACK_OFFSETS.CLOUD 
+  },
 ] as const;
 
 export const CAPABILITIES = [
