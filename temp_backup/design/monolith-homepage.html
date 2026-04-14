@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>DEV.HUB | Engineering Digital Reality</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#000000",
+                        secondary: "#555f70",
+                        background: "#f8f9fb",
+                        surface: "#f8f9fb",
+                        "on-surface": "#191c1e",
+                        "on-primary": "#ffffff",
+                        outline: "#777777",
+                        "outline-variant": "#c6c6c6",
+                        "surface-container-low": "#f3f4f6",
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', "sans-serif"],
+                    },
+                    letterSpacing: {
+                        monolith: "-0.04em",
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-sans">
+
+    <!-- Header -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-black/5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+            <div class="text-xl font-extrabold tracking-tighter text-black">DEV.HUB</div>
+            
+            <div class="hidden md:flex items-center gap-8 font-bold">
+                <a class="text-black border-b-2 border-black transition-opacity hover:opacity-80" href="#">Home</a>
+                <a class="text-outline transition-opacity hover:opacity-80" href="#">Work</a>
+                <a class="text-outline transition-opacity hover:opacity-80" href="#">Services</a>
+                <a class="text-outline transition-opacity hover:opacity-80" href="#">Expertise</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button class="hidden md:block bg-primary text-white px-6 py-2 rounded-lg font-bold text-sm transition-transform active:scale-95">Hire Me</button>
+                <button class="font-bold">Menu</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden px-8">
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
+                <span class="text-[25vw] font-extrabold text-black opacity-[0.05] tracking-monolith leading-none uppercase">Fullstack</span>
+            </div>
+            
+            <div class="relative z-10 w-full max-w-4xl flex flex-col items-center text-center">
+                <div class="glass-card p-12 rounded-xl mb-16 border border-white/10 w-full shadow-2xl">
+                    <div class="flex gap-2 mb-6 opacity-40">
+                        <div class="w-3 h-3 rounded-full bg-black"></div>
+                        <div class="w-3 h-3 rounded-full bg-black/40"></div>
+                        <div class="w-3 h-3 rounded-full bg-black/10"></div>
+                    </div>
+                    <code class="block text-left text-primary font-mono text-lg md:text-xl leading-relaxed">
+                        <span class="opacity-40">const</span> reality = <span class="opacity-40">new</span> DigitalSystem({<br/>
+                        &nbsp;&nbsp;architecture: <span class="font-bold">'Monolithic'</span>,<br/>
+                        &nbsp;&nbsp;performance: <span class="font-bold">Infinity</span>,<br/>
+                        &nbsp;&nbsp;aesthetic: <span class="font-bold">'Brutalist'</span><br/>
+                        });
+                    </code>
+                </div>
+                
+                <h1 class="text-5xl md:text-8xl font-extrabold tracking-monolith text-primary mb-8 leading-tight">Engineering Digital Reality</h1>
+                <p class="text-lg md:text-xl text-outline max-w-2xl mx-auto leading-relaxed">
+                    Synthesizing complex engineering with architectural discipline. We build high-performance digital ecosystems for the next generation of the web.
+                </p>
+                <div class="mt-12">
+                    <span class="material-symbols-outlined text-4xl animate-bounce">arrow_downward</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stacking Services -->
+        <section class="mt-32">
+            <!-- Service 01 -->
+            <div class="sticky top-0 h-screen flex flex-col pt-24">
+                <div class="bg-white h-full w-full rounded-t-[48px] shadow-2xl px-8 md:px-24 py-20 flex flex-col justify-between border-t border-black/5">
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+                        <div class="max-w-3xl">
+                            <span class="text-sm uppercase tracking-widest text-outline mb-6 block font-semibold">Service 01</span>
+                            <h2 class="text-6xl md:text-9xl font-extrabold tracking-monolith text-primary mb-8 leading-none">Frontend Design</h2>
+                            <p class="text-xl md:text-2xl text-outline max-w-xl">Crafting immersive interfaces where every pixel serves a structural purpose. High-precision typography meets fluid motion.</p>
+                        </div>
+                        <span class="material-symbols-outlined text-[8rem] md:text-[12rem] text-primary/10 select-none">layers</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm uppercase tracking-tighter border-b-2 border-primary pb-2 font-bold cursor-pointer hover:opacity-70 transition-opacity">Explore Architecture</div>
+                        <img class="w-32 h-32 object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjahc2V-226iOcEgdZMuEGRQ1VoC4l0sRohWlrD1SYBioJHf5T5Kmg-iHfP4BLWDxe_uihhF7yZYzF0ytp8EKxB0lZBD5tger7jbrWSXarQFgNchKemb-yo6X9F601wU3NI_m2Jr3SUD4NYCchmBtLDhCGRkDqMD6ItVh_O1iDE1FVlL2o3r1O74ttkShAhsEeKy_KMf2u3fS1llGwy1NPqGE5EYBy6QC0hv0wfixJhvphOmbPpSXZeXB7zDydbJ7I6sRwcOsyPLI" alt="Architecture Structure"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 02 -->
+            <div class="sticky top-0 h-screen flex flex-col pt-32">
+                <div class="bg-surface-container-low h-full w-full rounded-t-[48px] shadow-2xl px-8 md:px-24 py-20 flex flex-col justify-between border-t border-black/5">
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+                        <div class="max-w-3xl">
+                            <span class="text-sm uppercase tracking-widest text-outline mb-6 block font-semibold">Service 02</span>
+                            <h2 class="text-6xl md:text-9xl font-extrabold tracking-monolith text-primary mb-8 leading-none">Backend Logic</h2>
+                            <p class="text-xl md:text-2xl text-outline max-w-xl">The foundation of every digital monument. We architect scalable, resilient systems that handle complexity with grace.</p>
+                        </div>
+                        <span class="material-symbols-outlined text-[8rem] md:text-[12rem] text-primary/10 select-none">database</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm uppercase tracking-tighter border-b-2 border-primary pb-2 font-bold cursor-pointer hover:opacity-70 transition-opacity">Inspect Infrastructure</div>
+                        <img class="w-32 h-32 object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNgMwWxBlVbhpBHTpVZnYSuGap4YEpat9KRUXLFMpGv80HCDfxJ9u5KhWGDH11ZCQMkx8EWY09dNPbWYfSYCTyuXE4Asr0raVWcb77yEZJiU4i7i8VRkSWADsxg65I0Q9foh5ljHxhLTgAMcky3WClPTKwhiH30ViORvsteXdFEM1fwLFrak9Rx7R3ikiT5ffgLFU-a4oxELriYh8F4k7d1CIHa62jWtiGQi3uGdQP6_keEN0pNJIq4ehGnikQfA1peSqypQNuLfk" alt="Backend Silhoutte"/>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 03 -->
+            <div class="sticky top-0 h-screen flex flex-col pt-40">
+                <div class="bg-white h-full w-full rounded-t-[48px] shadow-2xl px-8 md:px-24 py-20 flex flex-col justify-between border-t border-black/5">
+                    <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+                        <div class="max-w-3xl">
+                            <span class="text-sm uppercase tracking-widest text-outline mb-6 block font-semibold">Service 03</span>
+                            <h2 class="text-6xl md:text-9xl font-extrabold tracking-monolith text-primary mb-8 leading-none">Cloud Systems</h2>
+                            <p class="text-xl md:text-2xl text-outline max-w-xl">Decentralized power at global scale. Automated deployment pipelines and immutable serverless environments.</p>
+                        </div>
+                        <span class="material-symbols-outlined text-[8rem] md:text-[12rem] text-primary/10 select-none">cloud</span>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div class="text-sm uppercase tracking-tighter border-b-2 border-primary pb-2 font-bold cursor-pointer hover:opacity-70 transition-opacity">Deploy Globally</div>
+                        <img class="w-32 h-32 object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvWeazS_fPy-pO5_FMZ2OSCDbfQ4wFiNSgelzZt9Zz2vJJ11fMgdxJTZb7y5STvQ9gblbPaU0wnKmybU-jHTBS8iVslWzX2J96LIs-fBkw50uiinNnb73RcVuQnWnoHh34_a5ZWJ4t5I_167bM0s0sKTbbicPrhMx2nOLYOnbrgDi_whdCpS2TnXSLY2e6-K3l1lha7ThgsZbUY-wheMgqlqHCdHwPPbhjZC6Eo2oHcshOaSCvP27sr33RqwR92mE5GgXIiSWgLEo" alt="Cloud Visualization"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities -->
+        <section class="py-48 px-8 md:px-24 bg-white z-40 relative">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-24">
+                <div class="md:w-1/3">
+                    <h3 class="text-4xl font-extrabold tracking-monolith text-primary mb-6">Capabilities</h3>
+                    <p class="text-outline leading-relaxed">Our stack is curated for extreme performance and long-term sustainability. No trends, just tools that work.</p>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+                    <div class="group border-b border-black/5 pb-4 hover:border-black transition-colors duration-500">
+                        <span class="text-xs uppercase tracking-widest text-outline mb-2 block">Core</span>
+                        <div class="text-2xl font-bold">React / Next.js</div>
+                    </div>
+                    <div class="group border-b border-black/5 pb-4 hover:border-black transition-colors duration-500">
+                        <span class="text-xs uppercase tracking-widest text-outline mb-2 block">Infrastructure</span>
+                        <div class="text-2xl font-bold">Docker / Kubernetes</div>
+                    </div>
+                    <div class="group border-b border-black/5 pb-4 hover:border-black transition-colors duration-500">
+                        <span class="text-xs uppercase tracking-widest text-outline mb-2 block">Data</span>
+                        <div class="text-2xl font-bold">GraphQL / REST API</div>
+                    </div>
+                    <div class="group border-b border-black/5 pb-4 hover:border-black transition-colors duration-500">
+                        <span class="text-xs uppercase tracking-widest text-outline mb-2 block">Systems</span>
+                        <div class="text-2xl font-bold">Node.js / Go</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-32 px-8 md:px-24 bg-surface-container-low text-center">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-5xl md:text-7xl font-extrabold tracking-monolith mb-12">Ready to architect your reality?</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                    <button class="bg-primary text-white border border-black px-12 py-5 rounded-lg text-lg font-bold hover:bg-transparent hover:text-black transition-all duration-300">Start a Project</button>
+                    <button class="text-primary text-lg font-bold border-b-2 border-primary pb-1 hover:opacity-70 transition-opacity">View Case Studies</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 px-8 border-t border-black/5 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-sm font-semibold uppercase tracking-wide text-neutral-800">
+                © 2024 DEV.HUB — Architecting Digital Reality
+            </p>
+            <div class="flex gap-12 text-sm font-semibold uppercase tracking-wide text-outline">
+                <a class="hover:text-black transition-colors" href="#">GitHub</a>
+                <a class="hover:text-black transition-colors" href="#">LinkedIn</a>
+                <a class="hover:text-black transition-colors" href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
