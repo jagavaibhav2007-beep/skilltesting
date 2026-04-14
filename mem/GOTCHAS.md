@@ -1,12 +1,6 @@
-# GOTCHAS — Monolith Portfolio
-> Updated: 2026-04-14
+# GOTCHAS
+> 2026-04-14
 
-## Next.js
-- `port conflict` — On Windows, Next.js processes can lock Port 3000 even after the terminal is closed. Fix: kill process by PID.
-- `turbopack build` — Sometimes requires `tsconfig.json` changes to take effect immediately. Restart dev server.
-
-## Lucide React
-- `ArrowDown` — `ArrowDownward` does not exist in standard lucide. Use `ArrowDown`.
-
-## Tailwind v4
-- `@theme` — Custom CSS variables must be explicitly mapped to theme tokens to be usable via `font-sans` or `tracking-monolith`.
+- **Next.js**: Port 3000 locks on Windows (kill PID). Restart dev server for `tsconfig` updates.
+- **Lucide**: Use `ArrowDown` (not `ArrowDownward`).
+- **Tailwind v4**: Map CSS vars in `@theme` to use them as utility tokens.

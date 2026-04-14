@@ -1,23 +1,22 @@
-# DECISIONS — Monolith Portfolio
-> Updated: 2026-04-14
+# DECISIONS
+> 2026-04-14
 
----
+**2026-04-14 — ADDED — Centralized Data**
+Why: Decouple copy from logic for scaling.
+Impact: All text moves to `config/constants.ts`.
+⛔ DO NOT: Hardcode business copy in JSX.
+
+**2026-04-14 — REMOVED — Layout.tsx Proxy**
+Why: Avoid "god-file" coupling. 
+Impact: Individual Navbar/Footer imports.
+⛔ DO NOT: Use layout wrappers as simple component proxies.
+
 **2026-04-14 — ADDED — Tailwind CSS v4**
-What: Adopted Tailwind v4 as the primary styling framework.
-Why: Superior performance and a cleaner CSS-first configuration model.
-Impact: `globals.css` is now the single source of truth for the theme; no `tailwind.config.js` exists.
-⛔ DO NOT: Re-introduce a JavaScript-based `tailwind.config.js` or attempt to use Tailwind v3 plugins that are incompatible with v4.
+Why: CSS-first config + performance.
+Impact: No `tailwind.config.js`.
+⛔ DO NOT: Add v3 plugins or JS-based theme config.
 
----
-**2026-04-14 — CHANGED — Modular Feature Architecture**
-What: Split the monolithic `Sections.tsx` and moved components into `features/portfolio/`.
-Why: To prevent "god-file" complexity and enable parallel development of UI features.
-Impact: Root components directory is now for shared UI and layout only.
-⛔ DO NOT: Add feature-specific components directly to the `/components` folder; use the appropriate feature folder instead.
-
----
-**2026-04-14 — REMOVED — Framer Motion**
-What: Deliberately avoided adding Framer Motion.
-Why: Keeping the footprint minimal while using native CSS/Tailwind for the heavy Brutalist motion.
-Impact: Reduced dynamic bundle size.
-⛔ DO NOT: Suggest or add Framer Motion or GSAP unless explicitly requested.
+**2026-04-14 — CHANGED — Feature Architecture**
+Why: Modular scalability.
+Impact: Split logic into `features/portfolio/`.
+⛔ DO NOT: Mix feature components in root `/components`.

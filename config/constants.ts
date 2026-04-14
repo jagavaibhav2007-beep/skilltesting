@@ -14,3 +14,82 @@ export const CONTACT = {
   TWITTER: "https://twitter.com/devhub",
   GITHUB: "https://github.com/devhub",
 };
+
+export const TYPOGRAPHY = {
+  HERO_HEADING: "typo-hero",
+  SECTION_HEADING: "typo-sub",
+  CTA_HEADING: "typo-hero",
+  SERVICE_TITLE: "typo-hero-large",
+  TRACKING: {
+    HERO: "typo-hero",
+    SUB: "typo-sub",
+    CTA: "typo-cta",
+  },
+  LEADING: {
+    TIGHT: "typo-hero",
+    SUB: "typo-sub",
+    BODY: "typo-body",
+  }
+};
+
+export const STYLES = {
+  LABEL: `text-xs uppercase typo-cta text-zinc-500 mb-2 block font-semibold`,
+  SECONDARY_TEXT: "text-secondary",
+};
+
+export const NAV_ITEMS = ["Home", "Work", "Services", "Expertise"];
+
+export const SERVICE_STACK_OFFSETS = {
+  FRONTEND: "top-[10%]",
+  BACKEND: "top-[15%]",
+  CLOUD: "top-[20%]",
+};
+
+export const SERVICES = [
+  { id: "01", title: "Frontend Design", description: "Crafting immersive interfaces where every pixel serves a structural purpose. High-precision typography meets fluid motion.", icon: "Layers", image: IMAGES.FRONTEND, bgColor: "bg-white", top: SERVICE_STACK_OFFSETS.FRONTEND },
+  { id: "02", title: "Backend Logic", description: "The foundation of every digital monument. We architect scalable, resilient systems that handle complexity with grace.", icon: "Database", image: IMAGES.BACKEND, bgColor: "bg-zinc-100", top: SERVICE_STACK_OFFSETS.BACKEND },
+  { id: "03", title: "Cloud Systems", description: "Decentralized power at global scale. Automated deployment pipelines and immutable serverless environments.", icon: "Cloud", image: IMAGES.CLOUD, bgColor: "bg-white", top: SERVICE_STACK_OFFSETS.CLOUD },
+] as const;
+
+export const CAPABILITIES = [
+  { category: "Core", technologies: "React / Next.js" },
+  { category: "Backend", technologies: "Node.js / Go" },
+  { category: "Infrastructure", technologies: "AWS / Docker" },
+  { category: "Architecture", technologies: "Monolithic / Microservices" },
+];
+
+export const HERO_DATA = {
+  BG_TEXT: "Fullstack",
+  HEADING_MAIN: "Engineering",
+  HEADING_SPAN: "Digital",
+  HEADING_SUB: "Reality",
+  DESCRIPTION: "Synthesizing complex engineering with architectural discipline. We build high-performance digital ecosystems for the next generation of the web.",
+  CODE: {
+    VAR: "reality",
+    CLASS: "DigitalSystem",
+    PROPS: [
+      { key: "architecture", value: "'Monolithic'" },
+      { key: "performance", value: "Infinity" },
+      { key: "aesthetic", value: "'Brutalist'" }
+    ]
+  }
+};
+
+export const CTA_DATA = {
+  HEADING: "Ready to architect your reality?",
+  PRIMARY_BTN: "Start a Project",
+  SECONDARY_BTN: "View Case Studies"
+};
+
+export const CAPABILITIES_DATA = {
+  TITLE: "Capabilities",
+  DESCRIPTION: "Our stack is curated for extreme performance and long-term sustainability. No trends, just tools that work.",
+  ITEMS: [
+    { label: "Core", value: "React / Next.js" },
+    { label: "Infrastructure", value: "Docker / Kubernetes" },
+    { label: "Data", value: "GraphQL / REST API" },
+    { label: "Systems", value: "Node.js / Go" }
+  ]
+};
+
+export const WINDOW_CONTROL_OPACITIES = [100, 40, 10];
