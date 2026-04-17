@@ -5,6 +5,8 @@ export const CONTACT = {
   LINKEDIN: "https://linkedin.com/company/devhub",
 };
 
+export const COPYRIGHT_TEXT = "© 2024 DEV.HUB — Architecting Digital Reality";
+
 export const TYPOGRAPHY = {
   HERO_HEADING: "typo-hero",
   SECTION_HEADING: "typo-sub",
