@@ -5,6 +5,8 @@
 ▣ Architecture: `src/` Root Migration Complete
 ▣ Scaling: Strict TS Rules & Path Aliases Applied
 ▣ Components: ServiceCard extracted and stabilized
+▣ Design: Expertise section 3D overhaul (Bento Grid, liquid-glass, 3D transform hover, ambient glow)
+▣ Design: SOHub typography implementation (Outfit, -0.05em tracking, 0.9 leading)
 ▣ Navigation: Nav links and section IDs integrated
 ▣ Cleanup: Orphan files and dead constants removed
 ▣ Stability: Critical build errors and missing config fixed

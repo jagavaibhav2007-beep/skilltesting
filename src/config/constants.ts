@@ -34,7 +34,7 @@ export const STYLES = {
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#work" },
-  { label: "Expertise", href: "#expertise" },
+  { label: "Skills", href: "#expertise" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -50,10 +50,8 @@ export const SERVICES = [
     title: { first: "Smart", second: "Development" },
     description: "Our team will work closely with you, taking the time to understand your vision and feedback in order to bring your ideas to life.",
     tags: ["Web Development", "App Development", "Interactions"],
-    icon: "Layers",
     bgColor: "bg-[#1c1f24]",
     textColor: "text-white",
-    labelColor: "text-zinc-500",
     top: SERVICE_STACK_OFFSETS.FRONTEND
   },
   {
@@ -61,10 +59,8 @@ export const SERVICES = [
     title: { first: "System", second: "Architecture" },
     description: "We architect scalable, resilient systems that handle complexity with grace, ensuring the final product surpasses expectations.",
     tags: ["Backend Logic", "Cloud Infrastructure", "Security"],
-    icon: "Database",
     bgColor: "bg-[#17191d]",
     textColor: "text-white",
-    labelColor: "text-zinc-600",
     top: SERVICE_STACK_OFFSETS.BACKEND
   },
   {
@@ -72,10 +68,8 @@ export const SERVICES = [
     title: { first: "Global", second: "Deployment" },
     description: "Decentralized power at global scale. Automated deployment pipelines and immutable serverless environments.",
     tags: ["Kubernetes", "DevOps", "Scaling"],
-    icon: "Cloud",
     bgColor: "bg-[#121417]",
     textColor: "text-white",
-    labelColor: "text-zinc-700",
     top: SERVICE_STACK_OFFSETS.CLOUD
   },
 ] as const;
@@ -103,8 +97,8 @@ export const CTA_DATA = {
   SECONDARY_BTN: "View Case Studies"
 };
 
-export const CAPABILITIES_DATA = {
-  TITLE: "Capabilities",
+export const SKILLS_DATA = {
+  TITLE: "Skills",
   DESCRIPTION: "Our stack is curated for extreme performance and long-term sustainability. No trends, just tools that work.",
   ITEMS: [
     { label: "Core", value: "React / Next.js" },

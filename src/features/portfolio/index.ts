@@ -1,4 +1,4 @@
 export { Hero } from './components/Hero';
 export { ServiceStack } from './components/ServiceStack';
-export { Capabilities } from './components/Capabilities';
+export { Skills } from './components/Skills';
 export { CTA } from './components/CTA';
