@@ -1,14 +1,19 @@
 # MEMORY
 > Stack: Next.js + TS + Tailwind v4
-> 2026-04-14
+> Last Refactor: 2026-04-17 (7-Pass Protocol Applied)
 
 ## Rules
-- **Structure**: Feature-based (`features/`). Named exports only.
+- **Structure**: Feature-based (`src/features/`). Named exports only.
 - **Imports**: Absolute aliases (`@/`, `@features/`, `@config/`).
 - **Aesthetic**: Brutalist (High-contrast, bold type, glassmorphism).
 
 ## Constraints
-- **Animation**: Native CSS/Tailwind only. No Framer Motion.
-- **Data**: Centralized in `config/constants.ts`. High-end typography uses object-based titles `{first, second}` to support dual-tone rendering.
-- **Legacy**: `temp_backup/` excluded from build.
-- **Layout**: Sticky stacking pattern for Services (`ServiceStack`). Uses `65vh` cards with `flex-justify-between` for optimal balance.
+- **Architecture**: All source code strictly resides in `src/`.
+- **Scaling**: Strict TS rules (No implicit returns, exact optional types).
+- **Navigation**: Managed via `NAV_LINKS` object mapping to section IDs.
+- **Animation**: Native CSS/Tailwind only.
+- **Data**: Centralized in `src/config/constants.ts`. High-end typography uses object-based titles `{first, second}`.
+
+## Layout
+- **Sticky Stacking**: `ServiceStack` uses `h-[65vh]` cards with `justify-between`.
+- **Root**: `src/app/layout.tsx` manages viewport and global fonts.

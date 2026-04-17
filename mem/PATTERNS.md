@@ -1,4 +1,10 @@
 # PATTERNS
+> 2026-04-17
+
+- **Component Migration**: Move from flat `components/` to `src/features/[domain]/components/` for domain-specific logic. 
+- **Sub-Component Extraction**: Atomic breakdown of "God components" into functional children (e.g., `ServiceStack` -> `ServiceCard`).
+- **Navigation Mapping**: Centralized object `NAV_LINKS` mapped to unique section IDs across the app.
+
 > 2026-04-14
 
 - **Styling**: Tailwind v4 via `globals.css` @theme. Use `tracking-monolith` (-0.04em).
