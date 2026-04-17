@@ -19,10 +19,12 @@
       }
     ],
     "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
     "paths": {
-      "@/*": ["./*"],
-      "@features/*": ["./features/*"],
-      "@config/*": ["./config/*"]
+      "@/*": ["./src/*"],
+      "@features/*": ["./src/features/*"],
+      "@config/*": ["./src/config/*"]
     }
   },
   "include": [
