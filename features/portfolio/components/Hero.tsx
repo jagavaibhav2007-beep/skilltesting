@@ -1,6 +1,6 @@
 import React from 'react';
 import { HERO_DATA, TYPOGRAPHY, WINDOW_CONTROL_OPACITIES } from '@config/constants';
-import { ArrowDown } from 'lucide-react';
+import { ScrollIndicator } from '@/components/ui/ScrollIndicator';
 
 export const Hero = () => (
   <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden px-8">
@@ -26,7 +26,7 @@ export const Hero = () => (
         {HERO_DATA.HEADING_MAIN} <span>{HERO_DATA.HEADING_SPAN}</span> {HERO_DATA.HEADING_SUB}
       </h1>
       <p className={`text-zinc-500 max-w-2xl mx-auto ${TYPOGRAPHY.LEADING.BODY}`}>{HERO_DATA.DESCRIPTION}</p>
-      <div className="mt-12"><ArrowDown className="w-10 h-10 animate-bounce text-black" /></div>
+      <ScrollIndicator />
     </div>
   </section>
 );

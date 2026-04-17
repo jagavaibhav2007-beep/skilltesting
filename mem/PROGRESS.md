@@ -8,6 +8,8 @@
 ✅ Color Stacking Pattern (Black -> Grey -> White)
 ✅ High-End Sohub Card Design (Symmetrical Header/Body)
 ✅ Minimalist UI Stabilization (Resolved Layout Overlaps)
+✅ Modular UI Components (ScrollIndicator abstracted to `components/ui/`)
+✅ Refined Prop Typing (Implemented `readonly` sync for constants)
 🚧 Content Population (Adding real details to Services/Work)
 ❌ View: Dark Mode
 

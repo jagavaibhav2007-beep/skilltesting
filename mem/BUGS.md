@@ -30,3 +30,8 @@ Fix: Explicitly destructured and rendered `title.first` and `title.second` in `S
 Bug: Large `h-[85vh]` cards with high padding caused text to overlap on scroll.
 Fix: Simplified to `h-[65vh]` with `flex justify-between` and increased vertical container spacing.
 ⛔ NEVER: Use overly large sticky heights without considering content collision.
+
+**2026-04-14 — Prop Type Mismatch (Refinement)**
+Bug: Passing `as const` data from `constants.ts` to components expecting standard `string[]` or mutable objects required ugly `as unknown as string[]` casting.
+Fix: Updated `ServiceCardProps` in `ServiceStack.tsx` to use `readonly` modifiers on `title` and `tags`, syncing types perfectly with the data source.
+⛔ NEVER: Use `as unknown` casts when a proper `readonly` interface can solve the contract mismatch.

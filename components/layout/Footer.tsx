@@ -10,7 +10,7 @@ export const Footer = () => (
       <div className="flex gap-12 text-sm font-semibold uppercase tracking-wide text-zinc-500">
         <a className="hover:text-black transition-colors" href={CONTACT.GITHUB}>GitHub</a>
         <a className="hover:text-black transition-colors" href={CONTACT.TWITTER}>Twitter</a>
-        <a className="hover:text-black transition-colors" href="#">LinkedIn</a>
+        <a className="hover:text-black transition-colors" href={CONTACT.LINKEDIN}>LinkedIn</a>
       </div>
     </div>
   </footer>

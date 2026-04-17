@@ -1,4 +1,4 @@
-import { NAV_ITEMS, TYPOGRAPHY, STYLES, CONTACT } from '@config/constants';
+import { NAV_ITEMS, TYPOGRAPHY, STYLES } from '@config/constants';
 import React from 'react';
 
 export const Navbar = () => (

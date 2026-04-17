@@ -7,3 +7,5 @@
 - **Exports**: Named only. No feature defaults.
 - **Layout**: Individual Navbar/Footer components in `components/layout/`.
 - **Depth**: Color stacking (Dark Zinc -> Light Zinc -> White) for layered sticky sections.
+- **Typing**: Use `readonly` props when consuming `as const` data from `config/constants.ts` to avoid casts.
+- **UI Components**: Small, reusable layout triggers (like `ScrollIndicator`) belong in `components/ui/`.

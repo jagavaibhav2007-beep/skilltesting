@@ -1,17 +1,11 @@
-import { SERVICES, TYPOGRAPHY, STYLES, SIZES } from '@config/constants';
-import { Layers, Database, Cloud, Sparkles } from 'lucide-react';
-
-const ICON_MAP = {
-  Layers,
-  Database,
-  Cloud
-};
+import React from 'react';
+import { SERVICES } from '@config/constants';
 
 interface ServiceCardProps {
   id: string;
-  title: { first: string; second: string };
+  title: { readonly first: string; readonly second: string };
   description: string;
-  tags: string[];
+  tags: readonly string[];
   bgColor: string;
   textColor: string;
   top: string;
@@ -64,7 +58,6 @@ export const ServiceStack = () => {
           <ServiceCard 
             key={s.id} 
             {...s}
-            tags={s.tags as unknown as string[]}
           />
         ))}
       </div>

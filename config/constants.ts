@@ -13,11 +13,14 @@ export const CONTACT = {
   EMAIL: "hello@devhub.engineering",
   TWITTER: "https://twitter.com/devhub",
   GITHUB: "https://github.com/devhub",
+  LINKEDIN: "https://linkedin.com/company/devhub",
 };
 
 export const TYPOGRAPHY = {
   HERO_HEADING: "typo-hero",
   SECTION_HEADING: "typo-sub",
+  SUB_HEADING: "typo-sub",
+  SUB_HEADING_SMALL: "typo-sub-small",
   CTA_HEADING: "typo-hero",
   SERVICE_TITLE: "typo-hero-large",
   TRACKING: {
@@ -46,38 +49,38 @@ export const SERVICE_STACK_OFFSETS = {
 };
 
 export const SERVICES = [
-  { 
-    id: "01", 
-    title: { first: "Smart", second: "Development" }, 
-    description: "Our team will work closely with you, taking the time to understand your vision and feedback in order to bring your ideas to life.", 
+  {
+    id: "01",
+    title: { first: "Smart", second: "Development" },
+    description: "Our team will work closely with you, taking the time to understand your vision and feedback in order to bring your ideas to life.",
     tags: ["Web Development", "App Development", "Interactions"],
-    icon: "Layers", 
-    bgColor: "bg-[#1c1f24]", 
+    icon: "Layers",
+    bgColor: "bg-[#1c1f24]",
     textColor: "text-white",
     labelColor: "text-zinc-500",
-    top: SERVICE_STACK_OFFSETS.FRONTEND 
+    top: SERVICE_STACK_OFFSETS.FRONTEND
   },
-  { 
-    id: "02", 
-    title: { first: "System", second: "Architecture" }, 
-    description: "We architect scalable, resilient systems that handle complexity with grace, ensuring the final product surpasses expectations.", 
+  {
+    id: "02",
+    title: { first: "System", second: "Architecture" },
+    description: "We architect scalable, resilient systems that handle complexity with grace, ensuring the final product surpasses expectations.",
     tags: ["Backend Logic", "Cloud Infrastructure", "Security"],
-    icon: "Database", 
-    bgColor: "bg-[#17191d]", 
+    icon: "Database",
+    bgColor: "bg-[#17191d]",
     textColor: "text-white",
     labelColor: "text-zinc-600",
-    top: SERVICE_STACK_OFFSETS.BACKEND 
+    top: SERVICE_STACK_OFFSETS.BACKEND
   },
-  { 
-    id: "03", 
-    title: { first: "Global", second: "Deployment" }, 
-    description: "Decentralized power at global scale. Automated deployment pipelines and immutable serverless environments.", 
+  {
+    id: "03",
+    title: { first: "Global", second: "Deployment" },
+    description: "Decentralized power at global scale. Automated deployment pipelines and immutable serverless environments.",
     tags: ["Kubernetes", "DevOps", "Scaling"],
-    icon: "Cloud", 
-    bgColor: "bg-[#121417]", 
+    icon: "Cloud",
+    bgColor: "bg-[#121417]",
     textColor: "text-white",
     labelColor: "text-zinc-700",
-    top: SERVICE_STACK_OFFSETS.CLOUD 
+    top: SERVICE_STACK_OFFSETS.CLOUD
   },
 ] as const;
 
