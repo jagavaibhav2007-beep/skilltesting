@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface ServiceCardProps {
-  id: string;
+  id: number;
   title: { readonly first: string; readonly second: string };
   description: string;
   tags: readonly string[];

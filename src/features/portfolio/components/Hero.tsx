@@ -3,7 +3,7 @@ import { HERO_DATA, TYPOGRAPHY, WINDOW_CONTROL_OPACITIES } from '@config/constan
 import { ScrollIndicator } from '@/components/ui/ScrollIndicator';
 
 export const Hero = () => (
-  <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden px-8">
+  <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden px-8">
     <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
       <span className="text-[25vw] font-extrabold text-black opacity-[0.05] tracking-monolith uppercase">{HERO_DATA.BG_TEXT}</span>
     </div>

@@ -31,7 +31,12 @@ export const STYLES = {
   SECONDARY_TEXT: "text-secondary",
 };
 
-export const NAV_ITEMS = ["Home", "Work", "Services", "Expertise"];
+export const NAV_LINKS = [
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#work" },
+  { label: "Expertise", href: "#expertise" },
+  { label: "Contact", href: "#contact" },
+];
 
 export const SERVICE_STACK_OFFSETS = {
   FRONTEND: "top-[10%]",
@@ -41,7 +46,7 @@ export const SERVICE_STACK_OFFSETS = {
 
 export const SERVICES = [
   {
-    id: "01",
+    id: 1,
     title: { first: "Smart", second: "Development" },
     description: "Our team will work closely with you, taking the time to understand your vision and feedback in order to bring your ideas to life.",
     tags: ["Web Development", "App Development", "Interactions"],
@@ -52,7 +57,7 @@ export const SERVICES = [
     top: SERVICE_STACK_OFFSETS.FRONTEND
   },
   {
-    id: "02",
+    id: 2,
     title: { first: "System", second: "Architecture" },
     description: "We architect scalable, resilient systems that handle complexity with grace, ensuring the final product surpasses expectations.",
     tags: ["Backend Logic", "Cloud Infrastructure", "Security"],
@@ -63,7 +68,7 @@ export const SERVICES = [
     top: SERVICE_STACK_OFFSETS.BACKEND
   },
   {
-    id: "03",
+    id: 3,
     title: { first: "Global", second: "Deployment" },
     description: "Decentralized power at global scale. Automated deployment pipelines and immutable serverless environments.",
     tags: ["Kubernetes", "DevOps", "Scaling"],

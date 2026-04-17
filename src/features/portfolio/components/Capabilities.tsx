@@ -1,7 +1,7 @@
 import { CAPABILITIES_DATA, STYLES, TYPOGRAPHY } from '@config/constants';
 
 export const Capabilities = () => (
-  <section className="py-48 px-8 md:px-24 bg-white z-40 relative">
+  <section id="expertise" className="py-48 px-8 md:px-24 bg-white z-40 relative">
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-24">
       <div className="md:w-1/3">
         <h3 className={`${TYPOGRAPHY.SUB_HEADING_SMALL} mb-6`}>{CAPABILITIES_DATA.TITLE}</h3>

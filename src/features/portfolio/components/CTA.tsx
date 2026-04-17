@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/Button';
 import { CTA_DATA, TYPOGRAPHY, STYLES } from '@config/constants';
 
 export const CTA = () => (
-  <section className="py-32 px-8 md:px-24 bg-zinc-100 text-center">
+  <section id="contact" className="py-32 px-8 md:px-24 bg-zinc-100 text-center">
     <div className="max-w-5xl mx-auto">
       <h2 className={`${TYPOGRAPHY.SUB_HEADING} mb-12`}>{CTA_DATA.HEADING}</h2>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
